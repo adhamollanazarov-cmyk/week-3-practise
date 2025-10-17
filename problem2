@@ -1,0 +1,12 @@
+print("--- Running Total Calculator ---")
+print("Enter numbers to add them up. Type 'done' to see the total.")
+total = 0
+while True:
+    user_input = input("Enter a number or 'done': ")
+    if user_input == "done":
+        break
+    num = float(user_input)
+    total += num 
+    print(f"Current total: {total}")
+print("--- Final Calculation ---")
+print(f"The final sum of all numbers is: {total}")
